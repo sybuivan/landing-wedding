@@ -1,0 +1,60 @@
+.form {
+    &-blog{ 
+        width: 100%;
+    }
+    &-blog__head{ }
+    &-blog__content{ }
+    &-blog__post{ 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+        &-image {
+            width: 50%;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+        &-date {
+            position: absolute;
+        }
+        &-content {
+            width: 50%;
+            padding: 6.7rem 5rem;
+            background-color: $color_white;
+        }
+
+        &-outher {
+            font-size: 1.8rem;
+            color:  $color_gray;
+            margin-bottom: 3rem;
+        }
+
+        &-title {
+            font-size: 2rem;
+            color: $color_text;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+        &-desc {
+            font-size: 1.8rem;
+            color: $color_text;
+            line-height: 2rem;
+            padding-bottom: 3rem;
+        }
+
+        &-interact {
+            font-weight: 600;
+            font-size: 2rem;
+            
+        }
+    }
+    &-blog__post-like{ 
+        margin-right: 2rem;
+    }
+    &-blog__post-comment{ 
+        color: $color_red;
+    }
+  }
