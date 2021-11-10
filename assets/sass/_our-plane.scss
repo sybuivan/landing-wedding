@@ -1,0 +1,79 @@
+main {
+    background-color: $bk_main;
+    padding-top: 17rem;
+}
+.our {
+    &-plane{ 
+        padding-bottom: 17rem;
+        &__head{
+            display: flex;
+            justify-content: center;
+         }
+        &__icon{ 
+            display: flex;
+            margin: auto;
+        }
+        &__heading{ 
+            text-align: center;
+            font-size: 3rem;
+            color: $color_text;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        &__desc{
+            text-align: center;
+            font-size: 1.7rem;
+            color: $color_text;
+            font-weight: 500;
+            margin-bottom: 7.5rem;
+         }
+        &__list{ 
+            box-shadow: 0 0.5rem 2rem 0.25rem rgb(124 147 165 / 34%);
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &__item{ 
+            background-color: $color_white;
+            width: 29%;
+            margin:0 1rem 1rem 0;
+            padding: 2rem;
+            img {
+                width: 100%;
+            } 
+        }
+        &__item-diff {
+            background-color: $color_orange;
+        }
+        &__item--active {
+            position: relative;
+
+        }
+        &__item-link {
+            position: absolute;
+            text-decoration: none;
+            font-size: 2rem;
+            color: $color_text;
+            background-color: $color_red;
+            padding: 1rem 1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+        &__item-title{ 
+            color: $color_text;
+            font-size: 2.2rem;
+            text-align: center;
+            margin: 3rem 0;
+            font-weight: 600;
+        }
+        &__item-desc{
+            font-size: 1.8rem;
+            color: #1b1b1b;
+            text-align: center;
+            padding: 0 2rem 5rem 0;
+         }
+    }
+    
+  }

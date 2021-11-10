@@ -1,0 +1,120 @@
+.header{ 
+    position: relative;
+    height: 830px;
+    background-image: url(../images/wedding-full.jpg);
+    background-position: center;
+    z-index: 1;
+    width: 100%;
+    &__wrapper {
+        width: 1170px;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(80deg, $color_orange 20%, transparent);
+    
+}
+.nav {
+    z-index: 2;
+    margin: 6.2rem 0 25.7rem 0;
+    @include flexItem;
+  &__logo{
+    color: $color_white;
+    text-decoration: none;
+    font-size: 3.4rem
+}
+  &__list{
+      @include flexItem;
+      &-item {
+          list-style: none;
+          margin-left: 8.2rem;
+          font-size: 1.8rem;
+
+          &-link {
+            text-decoration: none;
+            color: $color_text;
+            font-weight: 600;
+          }
+          &-link:hover {
+              color: $color_white;
+              transition: 0.3s ease;
+          }
+          &-link.active {
+            color: $color_white;
+        }
+      }
+      
+   }
+}
+.fa.fa {
+  &-search{ }
+  &-circle-play{ }
+}
+.container {
+  &-full{ }
+}
+.slider {
+    max-width: 65rem;
+  &__wrapper{ }
+  &__headiing{
+      font-size: 7rem;
+      font-weight: bold;
+      padding-bottom: 3rem;
+      span:first-child { 
+        color: $color_text;
+      }
+      span:last-child {
+          color: #e76d62;
+      }
+   }
+  &__desc{ 
+      color: $color_white;
+      line-height: 3rem;
+      font-size: 1.7rem;
+      margin-bottom: 6rem;
+  }
+  &__button{ 
+      text-decoration: none;
+      color: $color_white;
+      background-color: $color_red;
+      padding: 2rem 3rem;
+      font-size: 2.2rem;
+      border-radius: 4rem;
+      font-weight: 600;
+  }
+}
+.control {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(30%);
+  &__list{ 
+      li {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 100%;
+          background-color: $color_text;
+          margin-bottom: 2rem;
+      }
+      li.active {
+          background-color: $color_red;
+      }
+  }
+}
+.control-text {
+    @include flexItem;
+    font-size: 2.2rem;
+    margin-top: 7rem;
+}
+.play {
+  &-slider{ }
+  &-slider__btn{ }
+}

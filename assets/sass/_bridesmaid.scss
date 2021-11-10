@@ -1,0 +1,66 @@
+.bridesmaid {
+    padding-bottom: 17rem;
+    &-list{ 
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &-list__item{
+        &-diff {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+        }
+    }
+    &-item__user{
+        img {
+            border-radius: 1.4rem;
+            margin-bottom:1rem;
+        }
+        span {
+
+        }
+     }
+    &-item__user-name{ 
+        text-align: center;
+        color: $color_text;
+        font-size: 2.2rem;
+        font-weight: 600;
+        display: block;
+    }
+    &-control{ 
+        display: flex;
+        justify-content: center;
+        padding-top: 30rem;
+    }
+    &-control__list{ 
+        display: flex;
+        li {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            background-color: $color_red;
+            position: relative;
+            margin: 0.3rem;
+        }
+        li.active {
+            background-color: $color_text;
+            position: relative;
+            top: -3rem;
+            left: 5.4rem;
+        }
+        li::before {
+            position: absolute;
+            content: "";
+            background-color: $color_white;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+  }
