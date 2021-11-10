@@ -1,12 +1,18 @@
 .form {
     &-blog{ 
         width: 100%;
+        margin-bottom: 27rem;
     }
-    &-blog__head{ }
+    &-blog__head{ 
+        h2 {
+            margin-bottom: 10rem;
+        }
+    }
     &-blog__content{ }
     &-blog__post{ 
         display: flex;
         justify-content: space-between;
+        box-shadow: 0 0.5rem 2rem 0.25rem rgb(124 147 165 / 34%);
         margin-bottom: 3.5rem;
         &-image {
             width: 50%;
@@ -19,6 +25,14 @@
         }
         &-date {
             position: absolute;
+            background: $color_red;
+            padding: 1.5rem;
+            color: $color_white;
+            font-weight: 600;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            font-size: 1.6rem;
         }
         &-content {
             width: 50%;
@@ -58,3 +72,74 @@
         color: $color_red;
     }
   }
+
+.our-groom {
+    &__head {
+
+    }
+
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 17rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        div {
+            width: 35rem;
+        }
+        img {
+            border-radius: 100%;
+            margin-bottom: 4rem;
+            width: 100%;
+            object-fit: fill;
+
+        }
+        &-desc {
+            text-align: center;
+            margin-bottom: 8rem;
+            font-size: 1.6rem;
+        }
+    }
+    &__name {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 4rem;
+    }
+    &__control {
+        display: flex;
+        justify-content: center;
+        
+        li {
+            width: 2rem;
+            height: 2rem;
+            background: $color_text;
+            margin-right: 2rem;
+            border-radius: 100%;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                background-color: #fff;
+                width: 1.4rem;
+                height: 1.4rem;
+                left: 3px;
+                bottom: 3px;
+                border-radius: 100%;
+            }
+        }
+        li.active {
+            width: 3rem;
+            height: 3rem;
+            &::after {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+        
+    }
+}

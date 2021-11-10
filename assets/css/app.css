@@ -426,10 +426,15 @@ main {
 
 .form-blog {
   width: 100%;
+  margin-bottom: 27rem;
+}
+.form-blog__head h2 {
+  margin-bottom: 10rem;
 }
 .form-blog__post {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 0.5rem 2rem 0.25rem rgba(124, 147, 165, 0.34);
   margin-bottom: 3.5rem;
 }
 .form-blog__post-image {
@@ -443,6 +448,14 @@ main {
 }
 .form-blog__post-date {
   position: absolute;
+  background: #e6615a;
+  padding: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 1.6rem;
 }
 .form-blog__post-content {
   width: 50%;
@@ -475,6 +488,67 @@ main {
 }
 .form-blog__post-comment {
   color: #e6615a;
+}
+
+.our-groom__heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 17rem;
+}
+.our-groom__content {
+  display: flex;
+  justify-content: center;
+}
+.our-groom__content div {
+  width: 35rem;
+}
+.our-groom__content img {
+  border-radius: 100%;
+  margin-bottom: 4rem;
+  width: 100%;
+  object-fit: fill;
+}
+.our-groom__content-desc {
+  text-align: center;
+  margin-bottom: 8rem;
+  font-size: 1.6rem;
+}
+.our-groom__name {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.our-groom__control {
+  display: flex;
+  justify-content: center;
+}
+.our-groom__control li {
+  width: 2rem;
+  height: 2rem;
+  background: #1b1b1b;
+  margin-right: 2rem;
+  border-radius: 100%;
+  position: relative;
+}
+.our-groom__control li::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 1.4rem;
+  height: 1.4rem;
+  left: 3px;
+  bottom: 3px;
+  border-radius: 100%;
+}
+.our-groom__control li.active {
+  width: 3rem;
+  height: 3rem;
+}
+.our-groom__control li.active::after {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 /*# sourceMappingURL=app.css.map */
